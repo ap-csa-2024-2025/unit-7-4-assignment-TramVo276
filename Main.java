@@ -44,6 +44,7 @@ public class Main
    */
   public static int searchSecond(final ArrayList<String> arr, String target)
   {
+    String S
     return -1;
   }
 }
