@@ -11,6 +11,8 @@ public class Main
     String word = "";
     while (!word.equals("STOP"))
     {
+      word = sc.nextLine();
+      input = 
       System.out.println("Implement me!");
     }
   }
@@ -22,7 +24,18 @@ public class Main
    */
   public static int countSecondInitial(ArrayList<String> arr, String letter)
   {
-    return 0;
+    int count = 0;
+    for (String word : arr)
+    {
+      if (word != null && word.length() >= 2)
+      {
+        if (word.substring(1,2).equals(letter))
+        {
+          count++;
+        }
+      }
+    }
+    return count;
   }
 
   /** Returns the index of the second occurrence of target within the ArrayList
